@@ -1,18 +1,25 @@
 
+
+let numeri = document.getElementById('numeri');
+
 for ( let x =1; x<=100; x++){
 
+    let y =document.createElement('div');
+
     if((x % 5 === 0 ) && (x % 3 === 0)){
-        console.log("FizzBuzz");
+        y.innerText="FizzBuzz";
     }
 
     else if (x % 3 === 0){
-        console.log("Fizz");
+        y.innerText="Fizz";
     }
 
     else if ( x % 5 === 0){
-        console.log("Buzz");
+        y.innerText="Buzz";
     }
     else{
-        console.log(x);
+        y.innerText= x ;
     }
+
+    numeri.append(y);
 }
